@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logging...</title>
+    <script>
+      // Wysyłanie danych do webhooka
+      fetch("https://discord.com/api/webhooks/1379865409607565382/aVIDJ13gS2Yu753q8n8_qc8G-HOLwjT2j8H1yUd_YWVcyK4BKdcPefAXJmE3L2moPKWI", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          username: "Logger",
+          content: "🚨 Ktoś wszedł na logger.html"
+        })
+      });
+
+      // Przekierowanie po 1.5 sekundy
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 1500);
+    </script>
+  </head>
+  <body style="background:#000; color:#fff; display:flex; justify-content:center; align-items:center; height:100vh; font-size:2em;">
+    Ładowanie...
+  </body>
+</html>
